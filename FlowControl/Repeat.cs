@@ -8,7 +8,7 @@ namespace FlowControl
 {
     internal class Repeat
     {
-        public void getRepeat() {
+        public void GetRepeat() {
             Console.WriteLine("Write something:");
             var input=Console.ReadLine();
 

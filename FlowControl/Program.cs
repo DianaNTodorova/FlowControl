@@ -6,6 +6,7 @@
         {
             TycketMeny optionOne = new TycketMeny();
             Repeat optionTwo = new Repeat();
+            Words optionTree= new Words();
            
             
 
@@ -17,6 +18,7 @@
                 Console.WriteLine("0/ Exit the program");
                 Console.WriteLine("1/ Buy a tycket.");
                 Console.WriteLine("2/ Repeat.");
+                Console.WriteLine("3/ Words.");
                 Console.Write("Your choise is: ");
                 var choise =Console.ReadLine();
 
@@ -29,7 +31,10 @@
                      optionOne.OrderTycket();
                         break;
                     case "2":
-                        optionTwo.getRepeat();
+                        optionTwo.GetRepeat();
+                        break;
+                    case "3":
+                        optionTree.GetWords();
                         break;
 
                     default:
