@@ -21,7 +21,7 @@ namespace FlowControl
             }
             else 
             {
-                Console.WriteLine("Please write a sentence with at leeast words in it!");
+                Console.WriteLine("Please write a sentence with at least words in it!");
             }
 
         

@@ -12,7 +12,7 @@ namespace FlowControl
             Price = 0;
             Message = string.Empty;
         }
-        public string getTotalAmount(int Price, int total)
+        public string GetTotalAmount(int Price, int total)
         {
             return $"The Total amount is: {Price * total} kr";
         }
@@ -39,19 +39,19 @@ namespace FlowControl
             {
                 Price = 80;
                 Message = $"Youth: {Price}kr";
-                 totalAmount = getTotalAmount(Price, total);
+                 totalAmount = GetTotalAmount(Price, total);
             }
             else if (input > 64)
             {
                 Price = 90;
                 Message = $"Pensioner: {Price}kr";
-                 totalAmount = getTotalAmount(Price, total);
+                 totalAmount = GetTotalAmount(Price, total);
             }
             else
             {
                 Price = 120;
                 Message = $"Adult: {Price}kr";
-                 totalAmount = getTotalAmount(Price, total);
+                 totalAmount = GetTotalAmount(Price, total);
             }
 
             Console.WriteLine(Message);
